@@ -264,7 +264,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &562295726
 Animator:
   serializedVersion: 5
@@ -298,6 +298,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f80997f60da124fa70b3b6c4145bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 3
+  JumpForce: 10
+  isJumping: 0
+  doubleJump: 0
 --- !u!212 &562295728
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -422,7 +426,7 @@ GameObject:
   - component: {fileID: 1786845260}
   - component: {fileID: 1786845259}
   - component: {fileID: 1786845258}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

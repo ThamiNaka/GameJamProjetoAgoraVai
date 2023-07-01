@@ -10,13 +10,17 @@ public class Player : MonoBehaviour
 
     public bool isJumping;
     public bool doubleJump;
+    
 
     private Rigidbody2D rig;
+    private SoundManager SoundManager;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        SoundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -67,5 +71,14 @@ public class Player : MonoBehaviour
         {
             isJumping = true;
         }
+    }  
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Coin"))
+        {
+            SoundManager.coinsource.PlayOneShot(SoundManager.coinSound);
+            Destroy(other.gameObject);
+        }
     }
 }
+    

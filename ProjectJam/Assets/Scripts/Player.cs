@@ -13,13 +13,16 @@ public class Player : MonoBehaviour
     
 
     private Rigidbody2D rig;
-    private SoundManager SoundManager;
+    private Animator anim;
 
+    private SoundManager SoundManager;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+
         SoundManager = FindObjectOfType<SoundManager>();
     }
 
@@ -34,6 +37,23 @@ public class Player : MonoBehaviour
     {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * Speed;
+        
+        if (Input.GetAxis("Horizontal") < 0f)
+        {
+            anim.SetBool("run", true);
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+        }
+        
+        if (Input.GetAxis("Horizontal") > 0f)
+        {
+            anim.SetBool("run", true);
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+        }
+
+        if (Input.GetAxis("Horizontal") == 0f)
+        {
+            anim.SetBool("run", false);
+        }
     }
 
     void Jump()
@@ -43,7 +63,10 @@ public class Player : MonoBehaviour
             if (!isJumping)
             {
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
-                doubleJump = true;// mudando para false, pula apenas uma vez.
+                anim.SetBool("jump", true);
+
+                doubleJump = false;// mudando para false, pula apenas uma vez.
+
             }
             else
             {
@@ -62,6 +85,7 @@ public class Player : MonoBehaviour
         if(collision.gameObject.layer == 8)
         {
             isJumping = false;
+            anim.SetBool("jump", false);
         }
     }
 

@@ -60,7 +60,7 @@ public class GameController : MonoBehaviour
 
 
 
-/*
+
     public void Portal()
     {
         UpdateMineral();
@@ -69,7 +69,7 @@ public class GameController : MonoBehaviour
             portalLevel.SetActive(true);
         }
     }
-   
+   /*
     
     public void UpdateMineral()
     {

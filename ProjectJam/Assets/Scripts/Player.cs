@@ -79,18 +79,18 @@ public class Player : MonoBehaviour
                 SoundManager.audiosource.volume = 0.05f; 
                 SoundManager.audiosource.PlayOneShot(SoundManager.rocketSound);
 
-            //     doubleJump = false;// mudando para false, pula apenas uma vez.
+                doubleJump = true;
 
-            // }
-            // else
-            // {
-            //     if (doubleJump)
-            //     {
-            //          rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
-            //          doubleJump = false;
-            //     }
             }
-            
+            else
+            {
+                if (doubleJump)
+                {
+                    rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
+                    doubleJump = false;
+                }
+            }
+
         }
     }
 

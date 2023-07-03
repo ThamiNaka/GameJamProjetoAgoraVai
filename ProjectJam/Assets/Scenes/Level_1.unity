@@ -2450,6 +2450,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2670643531611017567, guid: f5129d4110871314fa07a8c5f66fda82, type: 3}
   m_PrefabInstance: {fileID: 7472859507501948819}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1445167116 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7192613843157983097, guid: 4dd3d2e70d83a164e90a3389355d7153, type: 3}
+  m_PrefabInstance: {fileID: 260831313}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1593567194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2693,9 +2704,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2797758170251772615, guid: 00e609afdcfae464fa14c07ed2ee9e55, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bcc6a4d317967a644870f703315fc86d, type: 3}
     - target: {fileID: 7671353777579553898, guid: 00e609afdcfae464fa14c07ed2ee9e55, type: 3}
       propertyPath: m_Name
       value: SoundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8873346113690043516, guid: 00e609afdcfae464fa14c07ed2ee9e55, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8873346113690043516, guid: 00e609afdcfae464fa14c07ed2ee9e55, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3215,7 +3238,15 @@ PrefabInstance:
     - target: {fileID: 7622066092079300402, guid: 0a34292a8b7cc784db87ca3d9e5d7265, type: 3}
       propertyPath: gameOver
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2135538905}
+    - target: {fileID: 7622066092079300402, guid: 0a34292a8b7cc784db87ca3d9e5d7265, type: 3}
+      propertyPath: mineralText
+      value: 
+      objectReference: {fileID: 1445167116}
+    - target: {fileID: 7622066092079300402, guid: 0a34292a8b7cc784db87ca3d9e5d7265, type: 3}
+      propertyPath: portalLevel
+      value: 
+      objectReference: {fileID: 2102677517}
     - target: {fileID: 7622066092079300403, guid: 0a34292a8b7cc784db87ca3d9e5d7265, type: 3}
       propertyPath: m_Name
       value: GameController
@@ -3491,10 +3522,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2102677517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7338252969397274707, guid: c005b3251235959429b9bf1f2522edb8, type: 3}
+  m_PrefabInstance: {fileID: 6804397769881560513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2130278588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7938586351424670148, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
   m_PrefabInstance: {fileID: 613073452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2135538905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1033803450292374302, guid: 4dd3d2e70d83a164e90a3389355d7153, type: 3}
+  m_PrefabInstance: {fileID: 260831313}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4306533946285589683
 PrefabInstance:

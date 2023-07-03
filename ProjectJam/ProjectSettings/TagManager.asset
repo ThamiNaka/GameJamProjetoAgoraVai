@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coin
-  - enemy
-  - ammo
+  - Ground
   layers:
   - Default
   - TransparentFX

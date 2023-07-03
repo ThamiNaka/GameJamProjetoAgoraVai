@@ -41,13 +41,13 @@ public class Player : MonoBehaviour
         if (Input.GetAxis("Horizontal") < 0f)
         {
             anim.SetBool("run", true);
-            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
         
         if (Input.GetAxis("Horizontal") > 0f)
         {
             anim.SetBool("run", true);
-            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }
 
         if (Input.GetAxis("Horizontal") == 0f)

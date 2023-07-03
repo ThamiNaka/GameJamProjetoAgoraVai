@@ -10,7 +10,12 @@ public class Player : MonoBehaviour
 
     public bool isJumping;
     public bool doubleJump;
-    
+
+    public GameObject projetil;         // vai ser o projetil da arma
+    public Transform weapon;           // vai ser a posição de onde vai sairo nosso tiro
+    private bool fire;                // vai ser o nosso input de disparo da arma
+    public float fireStrong;         // vai ser a velocidade do tiro
+    private bool flipx = false;    // vai ser a mudança de direção
 
     private Rigidbody2D rig;
     private Animator anim;
@@ -31,6 +36,7 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
+        Fire();
     }
 
     void Move()
@@ -65,16 +71,16 @@ public class Player : MonoBehaviour
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                 anim.SetBool("jump", true);
 
-                doubleJump = false;// mudando para false, pula apenas uma vez.
+            //     doubleJump = false;// mudando para false, pula apenas uma vez.
 
-            }
-            else
-            {
-                if (doubleJump)
-                {
-                     rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
-                     doubleJump = false;
-                }
+            // }
+            // else
+            // {
+            //     if (doubleJump)
+            //     {
+            //          rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
+            //          doubleJump = false;
+            //     }
             }
             
         }
@@ -103,6 +109,26 @@ public class Player : MonoBehaviour
             SoundManager.coinsource.PlayOneShot(SoundManager.coinSound);
             Destroy(other.gameObject);
         }
+    }
+
+    private void Fire()
+    {
+        if (fire = Input.GetButtonDown("Fire1"))
+        {
+            GameObject temp = Instantiate(projetil);
+            temp.transform.position = weapon.position;
+            temp.GetComponent<Rigidbody2D>().velocity = new Vector2(fireStrong, 0);
+            Destroy(temp.gameObject, 3f);
+        }
+    }
+
+    private void Flip()
+    {
+        flipx = !flipx;
+        float x = transform.localScale.x;
+        x *= -1;
+        transform.localScale = new Vector3(x, transform.localScale.y, transform.localScale.z);
+        fireStrong *= -1; 
     }
 }
     

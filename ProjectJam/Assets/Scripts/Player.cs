@@ -93,6 +93,14 @@ public class Player : MonoBehaviour
             isJumping = false;
             anim.SetBool("jump", false);
         }
+    
+
+        if(collision.gameObject.layer == 9)
+        {
+            //GameController.instance.ShowGameOver();
+            //anim.SetTrigger("die");
+            Destroy(gameObject, 0.6f);
+        }
     }
 
     void OnCollisionExit2D(Collision2D collision)

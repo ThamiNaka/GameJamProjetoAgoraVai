@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     private Animator anim;
 
+    public int Score;
+
     private SoundManager SoundManager;
    
 
@@ -104,8 +106,8 @@ public class Player : MonoBehaviour
         if(collision.gameObject.layer == 12)
         {
             GameController.instance.ShowGameOver();
-            //anim.SetTrigger("die");
-            Destroy(gameObject);
+            anim.SetTrigger("die");
+            Destroy(gameObject, 0.6f);
         }
     }
 
@@ -115,12 +117,16 @@ public class Player : MonoBehaviour
         {
             isJumping = true;
         }
-    }  
+    }
+
+    //coin  
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Coin"))
         {
             SoundManager.audiosource.PlayOneShot(SoundManager.coinSound);
+            GameController.instance.totalMineral += Score;
+            GameController.instance.UpdateMineralText();
             Destroy(other.gameObject);
         }
     }

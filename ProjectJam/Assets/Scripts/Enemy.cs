@@ -6,7 +6,9 @@ public class Enemy : MonoBehaviour
 {
     public float speed;
     public Rigidbody2D enemyRb;
-    private bool faceFlip; //vai ser usada para mudar de direção quando colidir com algo
+    private bool faceFlip = false; //vai ser usada para mudar de direção quando colidir com algo
+    bool inGround = false;
+    Transform groundCheck;
 
     private SoundManager SoundManager;
 
@@ -14,35 +16,43 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        enemyRb = gameObject.GetComponent<Rigidbody2D>();
+        groundCheck = transform.Find("EnemyGroundCheck");
+
         SoundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime); // responsável pelo caminhar do enemy
-    }
-
-    private void FlipEnemy()
-    {
-        if (faceFlip)
+        inGround = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("ground"));
+        if (!inGround)
         {
-            gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-        else
-        {
-            gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+            speed *= -1;
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
+    void FixedUpdate()
     {
-        if (col != null && !col.collider.CompareTag("Player") && !col.collider.CompareTag("Ground"))
-        {
-            faceFlip = !faceFlip;
-        }
+        enemyRb.velocity = new Vector2(speed, enemyRb.velocity.y);
 
-        FlipEnemy();
+        if (speed > 0 && !faceFlip)
+        {
+            Flip();
+        }
+        else if (speed < 0 && faceFlip)
+        {
+            Flip();
+        }
+    }
+
+    void Flip()
+    {
+        faceFlip = !faceFlip;
+
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
     private void OnTriggerEnter2D(Collider2D col)

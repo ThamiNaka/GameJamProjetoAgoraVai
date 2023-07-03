@@ -96,12 +96,12 @@ public class Player : MonoBehaviour
             anim.SetBool("jump", false);
         }
     
-
-        if(collision.gameObject.layer == 9)
+    //gameover
+        if(collision.gameObject.layer == 12)
         {
-            //GameController.instance.ShowGameOver();
+            GameController.instance.ShowGameOver();
             //anim.SetTrigger("die");
-            Destroy(gameObject, 0.6f);
+            Destroy(gameObject);
         }
     }
 

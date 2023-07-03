@@ -9,6 +9,7 @@ TagManager:
   - ammo
   - weapon
   - enemy
+  - obstacule
   layers:
   - Default
   - TransparentFX

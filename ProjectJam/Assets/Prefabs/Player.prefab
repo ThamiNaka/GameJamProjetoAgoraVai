@@ -133,12 +133,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  JumpForce: 10
+  JumpForce: 12
   isJumping: 0
   doubleJump: 0
   projetil: {fileID: 1979160627111454657, guid: bb625a155dc660442b9ea952ff0dd73e, type: 3}
   weapon: {fileID: 3867945653126458817}
   fireStrong: 10
+  Score: 1
 --- !u!95 &6744393681626459339
 Animator:
   serializedVersion: 5
@@ -192,8 +193,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04275179, y: 0}
-  m_Size: {x: 1.10221, y: 2}
+  m_Offset: {x: 0.04275179, y: 0.22370982}
+  m_Size: {x: 1.10221, y: 1.5525804}
   m_Direction: 0
 --- !u!50 &2049202966346128474
 Rigidbody2D:
@@ -207,10 +208,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -220,5 +221,5 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4

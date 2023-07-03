@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public bool doubleJump;
 
     public GameObject projetil;         // vai ser o projetil da arma
-    public Transform weapon;           // vai ser a posição de onde vai sairo nosso tiro
+    public Transform weapon;           // vai ser a posição de onde vai sair o nosso tiro
     private bool fire;                // vai ser o nosso input de disparo da arma
     public float fireStrong;         // vai ser a velocidade do tiro
     private bool flipx = false;    // vai ser a mudança de direção
@@ -46,12 +46,14 @@ public class Player : MonoBehaviour
         
         if (Input.GetAxis("Horizontal") < 0f)
         {
+            //Flip();
             anim.SetBool("run", true);
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
         
         if (Input.GetAxis("Horizontal") > 0f)
         {
+            //Flip();
             anim.SetBool("run", true);
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }

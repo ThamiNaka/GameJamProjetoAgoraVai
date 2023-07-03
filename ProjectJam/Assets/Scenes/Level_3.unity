@@ -7455,7 +7455,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 332145953424834104, guid: c005b3251235959429b9bf1f2522edb8, type: 3}
       propertyPath: lvlName
-      value: Cena
+      value: Final
       objectReference: {fileID: 0}
     - target: {fileID: 6354626457196750574, guid: c005b3251235959429b9bf1f2522edb8, type: 3}
       propertyPath: m_RootOrder

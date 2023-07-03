@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     private Animator anim;
 
     private SoundManager SoundManager;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +50,7 @@ public class Player : MonoBehaviour
             //Flip();
             anim.SetBool("run", true);
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            
         }
         
         if (Input.GetAxis("Horizontal") > 0f)
@@ -72,6 +74,8 @@ public class Player : MonoBehaviour
             {
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                 anim.SetBool("jump", true);
+                SoundManager.audiosource.volume = 0.05f; 
+                SoundManager.audiosource.PlayOneShot(SoundManager.rocketSound);
 
             //     doubleJump = false;// mudando para false, pula apenas uma vez.
 
@@ -116,7 +120,7 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Coin"))
         {
-            SoundManager.coinsource.PlayOneShot(SoundManager.coinSound);
+            SoundManager.audiosource.PlayOneShot(SoundManager.coinSound);
             Destroy(other.gameObject);
         }
     }
@@ -129,6 +133,8 @@ public class Player : MonoBehaviour
             temp.transform.position = weapon.position;
             temp.GetComponent<Rigidbody2D>().velocity = new Vector2(fireStrong, 0);
             Destroy(temp.gameObject, 3f);
+            SoundManager.audiosource.volume = 0.1f;
+            SoundManager.audiosource.PlayOneShot(SoundManager.blastSound);
         }
     }
 

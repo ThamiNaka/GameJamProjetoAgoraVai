@@ -60,17 +60,17 @@ public class GameController : MonoBehaviour
 
 
 
-/*
+
     public void Portal()
     {
-        UpdateMineral();
         if (totalMineral > 4)
-        {
+        {   
             portalLevel.SetActive(true);
+            print("portal ativo");
         }
     }
    
-    
+    /*
     public void UpdateMineral()
     {
         if (totalMineral > 0)

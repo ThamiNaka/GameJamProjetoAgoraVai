@@ -11,6 +11,7 @@ public class SoundManager : MonoBehaviour
    public AudioClip blastSound;
    public AudioClip rocketSound;
    public AudioClip mobdieSound;
+   public AudioClip portalSound;
 
    public void Awake() 
    {

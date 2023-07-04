@@ -127,6 +127,7 @@ public class Player : MonoBehaviour
             SoundManager.audiosource.PlayOneShot(SoundManager.coinSound);
             GameController.instance.totalMineral += Score;
             GameController.instance.UpdateMineralText();
+            GameController.instance.Portal();
             Destroy(other.gameObject);
         }
     }

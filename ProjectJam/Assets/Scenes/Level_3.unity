@@ -24501,8 +24501,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_Ice
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 9054617957562228698, guid: 84835d734ef29074a8388836f693bc92, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

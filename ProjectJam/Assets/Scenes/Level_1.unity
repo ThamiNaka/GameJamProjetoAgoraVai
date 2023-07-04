@@ -1905,8 +1905,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Groun_lava (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8338026337043770817, guid: c3829f61c2f00dd4dacc92eccc2166d7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3319,8 +3318,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Groun_lava (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8338026337043770817, guid: c3829f61c2f00dd4dacc92eccc2166d7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3765,8 +3763,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Groun_lava (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8338026337043770817, guid: c3829f61c2f00dd4dacc92eccc2166d7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3827,8 +3824,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Groun_lava (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8338026337043770817, guid: c3829f61c2f00dd4dacc92eccc2166d7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3925,8 +3921,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Groun_lava (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8338026337043770817, guid: c3829f61c2f00dd4dacc92eccc2166d7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4110,8 +4105,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Groun_lava (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8338026337043770817, guid: c3829f61c2f00dd4dacc92eccc2166d7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4364,8 +4358,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Groun_lava (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8338026337043770817, guid: c3829f61c2f00dd4dacc92eccc2166d7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5648,8 +5641,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Groun_lava
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8338026337043770817, guid: c3829f61c2f00dd4dacc92eccc2166d7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1760341233337071943}
   - component: {fileID: 4167145640188462131}
   - component: {fileID: 8873346113690043516}
-  - component: {fileID: 9148051808499488249}
+  - component: {fileID: 7267231174863829535}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4167145640188462131
 MonoBehaviour:
@@ -52,6 +52,7 @@ MonoBehaviour:
   blastSound: {fileID: 8300000, guid: 0d9f9c334e72ae14eb0749e096df1df0, type: 3}
   rocketSound: {fileID: 8300000, guid: 521c01db9f675d64090fa54657d7924e, type: 3}
   mobdieSound: {fileID: 0}
+  portalSound: {fileID: 0}
 --- !u!82 &8873346113690043516
 AudioSource:
   m_ObjectHideFlags: 0
@@ -148,7 +149,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &9148051808499488249
+--- !u!82 &7267231174863829535
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +159,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bcc6a4d317967a644870f703315fc86d, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

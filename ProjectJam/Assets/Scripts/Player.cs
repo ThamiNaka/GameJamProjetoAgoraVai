@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
             {
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                 anim.SetBool("jump", true);
-                SoundManager.audiosource.volume = 0.05f; 
+                SoundManager.audiosource.volume = 1f;
                 SoundManager.audiosource.PlayOneShot(SoundManager.rocketSound);
 
                 doubleJump = true;
@@ -140,7 +140,7 @@ public class Player : MonoBehaviour
             temp.transform.position = weapon.position;
             temp.GetComponent<Rigidbody2D>().velocity = new Vector2(fireStrong, 0);
             Destroy(temp.gameObject, 3f);
-            SoundManager.audiosource.volume = 0.1f;
+            SoundManager.audiosource.volume = 1f;
             SoundManager.audiosource.PlayOneShot(SoundManager.blastSound);
         }
     }

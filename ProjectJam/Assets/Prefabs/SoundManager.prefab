@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1760341233337071943}
   - component: {fileID: 4167145640188462131}
   - component: {fileID: 8873346113690043516}
-  - component: {fileID: 7267231174863829535}
+  - component: {fileID: 8853661903280194976}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -51,7 +51,7 @@ MonoBehaviour:
   runSound: {fileID: 0}
   blastSound: {fileID: 8300000, guid: 0d9f9c334e72ae14eb0749e096df1df0, type: 3}
   rocketSound: {fileID: 8300000, guid: 521c01db9f675d64090fa54657d7924e, type: 3}
-  mobdieSound: {fileID: 0}
+  mobdieSound: {fileID: 8300000, guid: 2c6080572b8071944b6bbeea80d03ff3, type: 3}
   portalSound: {fileID: 0}
 --- !u!82 &8873346113690043516
 AudioSource:
@@ -149,7 +149,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &7267231174863829535
+--- !u!82 &8853661903280194976
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,9 +161,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

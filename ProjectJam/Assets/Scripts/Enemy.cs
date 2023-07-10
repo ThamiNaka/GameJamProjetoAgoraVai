@@ -61,6 +61,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(col.gameObject);
             Destroy(this.gameObject);
+            SoundManager.audiosource.volume = 1f; 
             SoundManager.audiosource.PlayOneShot(SoundManager.mobdieSound);
         }
     }

@@ -549,7 +549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 491748198435698, guid: c173d8a5856879b4ba31a58dde0355d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.04
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 491748198435698, guid: c173d8a5856879b4ba31a58dde0355d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2357,7 +2357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 66345231126940861, guid: c3829f61c2f00dd4dacc92eccc2166d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42.8
+      value: -42.72
       objectReference: {fileID: 0}
     - target: {fileID: 66345231126940861, guid: c3829f61c2f00dd4dacc92eccc2166d7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2733,7 +2733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 491748198435698, guid: c173d8a5856879b4ba31a58dde0355d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.18
+      value: 1.7490002
       objectReference: {fileID: 0}
     - target: {fileID: 491748198435698, guid: c173d8a5856879b4ba31a58dde0355d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4499,6 +4499,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7267231174863829535, guid: 00e609afdcfae464fa14c07ed2ee9e55, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267231174863829535, guid: 00e609afdcfae464fa14c07ed2ee9e55, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: bcc6a4d317967a644870f703315fc86d, type: 3}
@@ -4506,6 +4510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8853661903280194976, guid: 00e609afdcfae464fa14c07ed2ee9e55, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bcc6a4d317967a644870f703315fc86d, type: 3}
     - target: {fileID: 9148051808499488249, guid: 00e609afdcfae464fa14c07ed2ee9e55, type: 3}
       propertyPath: m_Volume
       value: 0.5
@@ -5515,6 +5523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 7338252969397274707, guid: c005b3251235959429b9bf1f2522edb8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5538,7 +5550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2670643531611017567, guid: f5129d4110871314fa07a8c5f66fda82, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.76
+      value: -3.441772
       objectReference: {fileID: 0}
     - target: {fileID: 2670643531611017567, guid: f5129d4110871314fa07a8c5f66fda82, type: 3}
       propertyPath: m_LocalPosition.z

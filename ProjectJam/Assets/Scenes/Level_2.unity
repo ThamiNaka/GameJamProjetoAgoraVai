@@ -1375,6 +1375,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4373770134214486849, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4765104771154728094, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
       propertyPath: m_Name
       value: crystal (6)
@@ -1458,7 +1462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 491748198435698, guid: c173d8a5856879b4ba31a58dde0355d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.56
+      value: 2.39553
       objectReference: {fileID: 0}
     - target: {fileID: 491748198435698, guid: c173d8a5856879b4ba31a58dde0355d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1604,6 +1608,10 @@ PrefabInstance:
     - target: {fileID: 4373770134214486849, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373770134214486849, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4765104771154728094, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
       propertyPath: m_Name
@@ -2957,7 +2965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 491748198435698, guid: c173d8a5856879b4ba31a58dde0355d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5238006
+      value: 2.39553
       objectReference: {fileID: 0}
     - target: {fileID: 491748198435698, guid: c173d8a5856879b4ba31a58dde0355d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6242,7 +6250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 491748198435698, guid: c173d8a5856879b4ba31a58dde0355d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.08
+      value: 1.756408
       objectReference: {fileID: 0}
     - target: {fileID: 491748198435698, guid: c173d8a5856879b4ba31a58dde0355d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6658,6 +6666,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4373770134214486849, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4765104771154728094, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
       propertyPath: m_Name
       value: crystal (8)
@@ -6725,7 +6737,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1725665391}
-  - component: {fileID: 1725665392}
   m_Layer: 9
   m_Name: Mobs
   m_TagString: Untagged
@@ -6761,20 +6772,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1725665392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725665390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3fb008b8fc6c1543a8a2f7cbd058a91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  enemyRb: {fileID: 0}
 --- !u!1 &1768766402
 GameObject:
   m_ObjectHideFlags: 0
@@ -7099,6 +7096,10 @@ PrefabInstance:
     - target: {fileID: 4373770134214486849, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373770134214486849, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4765104771154728094, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
       propertyPath: m_Name
@@ -8298,6 +8299,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4373770134214486849, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4765104771154728094, guid: 86b59b87b6053b24ca95ae5383931f78, type: 3}
       propertyPath: m_Name
       value: crystal (1)
@@ -8672,7 +8677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2670643531611017567, guid: f5129d4110871314fa07a8c5f66fda82, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.82
+      value: -3.442423
       objectReference: {fileID: 0}
     - target: {fileID: 2670643531611017567, guid: f5129d4110871314fa07a8c5f66fda82, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8791,6 +8796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8853661903280194976, guid: 00e609afdcfae464fa14c07ed2ee9e55, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ee36ba6913aa84146a1ea8c85debe5d9, type: 3}
     - target: {fileID: 8873346113690043516, guid: 00e609afdcfae464fa14c07ed2ee9e55, type: 3}
       propertyPath: Loop
       value: 1
